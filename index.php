@@ -6,6 +6,11 @@
 include './inc/db.php';
 include './inc/form.php';
 
+
+include './inc/db_close.php';
+
+include './inc/db_close';
+
 $sql = 'SELECT * FROM users';
 $result = mysqli_query($conn,$sql);
 $users = mysqli_fetch_all($result,MYSQLI_ASSOC);
