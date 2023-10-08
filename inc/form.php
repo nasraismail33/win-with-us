@@ -42,7 +42,7 @@ if(!array_filter($errors)){
 
 
     if(mysqli_query($conn, $sql)){
-        header('Location: index.php');
+        header('Location: ' . $_SERVER['PHP_SELF'] );
     }else{
         echo 'Error: '. mysqli_error($conn);
     }
