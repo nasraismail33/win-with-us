@@ -127,10 +127,10 @@ echo '</pre>';
 </form>
  -->
 
-<div class="row">
+<div class="row mb-5 pb-6">
 <?php foreach($users as $user) :?>
   <div class="col-sm-6">
-    <div class="card">
+    <div class="card my-2 bg-light">
       <div class="card-body">
  <h5 class="card-title"><?php echo htmlspecialchars($user['firstName']) .' ' . htmlspecialchars($user['lastName'])?> </h5> <br>  
   <p class="card-text"> <?php echo htmlspecialchars($user['email']) ?></p>
@@ -139,6 +139,9 @@ echo '</pre>';
 </div>
 <?php endforeach;?>
 </div>
+
+<?php include_once './parts/footer.php'; ?>
+
  
 
 
