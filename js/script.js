@@ -26,5 +26,9 @@ var x = setInterval(function() {
   }
 }, 1000);
 
- const win = document.querySelector("#winner")
+ const win = document.querySelector("#winner");
+ const cards = document.querySelector("#cards");
 
+win.addEventListener('click',function(){
+  cards.style.display = 'flex';
+});

@@ -131,8 +131,11 @@ mysqli_free_result($result);
 </form>
  -->
 
+
+ <button id="winner" type="button" class="btn btn-primary"> اختيار الرابح </button>
+
+
 <div id="cards" class="row mb-5 pb-6">
-<button id="winner" type="button"> اختيار الرابح </button>
 
 <?php foreach($users as $user) :?>
   <div class="col-sm-6">

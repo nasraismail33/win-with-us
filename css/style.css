@@ -1,5 +1,17 @@
+
+/*
 #countdown{
-    color: blue;
+    color: rgb(6, 87, 238);
     padding: 10px;
-    
+}
+
+*/
+
+#demo{
+    color: rgb(6, 87, 238);
+    padding: 10px;
+}
+
+#cards{
+    display:none;
 }
