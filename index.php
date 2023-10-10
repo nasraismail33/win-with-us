@@ -23,12 +23,12 @@ echo '</pre>';
 
 
 /* 
-
+mysqli_free_result($result);
+  mysqli_close($conn);
 
   */
   //
-  mysqli_free_result($result);
-  mysqli_close($conn);
+  
 ?>
 
 
@@ -112,9 +112,8 @@ echo '</pre>';
   </div>
 
 
-
 <!-- 
-</div>
+<div id="demo">jjjjjjjjjjjjjj</div>
  -->
 
 
@@ -132,7 +131,9 @@ echo '</pre>';
 </form>
  -->
 
-<div class="row mb-5 pb-6">
+<div id="cards" class="row mb-5 pb-6">
+<button id="winner" type="button"> اختيار الرابح </button>
+
 <?php foreach($users as $user) :?>
   <div class="col-sm-6">
     <div class="card my-2 bg-light">
@@ -145,7 +146,11 @@ echo '</pre>';
 <?php endforeach;?>
 </div>
 
-<?php include_once './parts/footer.php'; ?>
+<?php include_once './parts/footer.php';
+
+mysqli_free_result($result);
+  mysqli_close($conn);
+?>
 
 
 
