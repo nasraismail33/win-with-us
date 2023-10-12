@@ -27,8 +27,23 @@ var x = setInterval(function() {
 }, 1000);
 
  const win = document.querySelector("#winner");
- const cards = document.querySelector("#cards");
+ //const cards = document.querySelector("#cards");
+
+ var myModal = new bootstrap.Modal(document.getElementById('modal'), {
+  keyboard: false
+});
+
+
+
+
 
 win.addEventListener('click',function(){
-  cards.style.display = 'flex';
+  //cards.style.display = 'flex';
+//myModal.show();
+setTimeout(function(){
+  myModal.show();
+}, 1000)
+
 });
+
+
