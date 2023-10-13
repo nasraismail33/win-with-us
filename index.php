@@ -137,11 +137,11 @@ mysqli_free_result($result);
   delete
    <button id="winner" type="button" class="btn btn-primary"> اختيار الرابح </button>-->
 
-
+    <div class="loader-con">
    <div id="loader">
 	<canvas id="circularLoader" width="200" height="200"></canvas>
 </div>
-
+</div>
 
  <!-- Button trigger modal -->
 

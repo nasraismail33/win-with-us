@@ -27,6 +27,9 @@ var x = setInterval(function() {
 }, 1000);
 
  const win = document.querySelector("#winner");
+ const loader = document.querySelector(".loader-con");
+
+
  //const cards = document.querySelector("#cards");
 
  var myModal = new bootstrap.Modal(document.getElementById('modal'), {
@@ -40,6 +43,8 @@ var x = setInterval(function() {
 win.addEventListener('click',function(){
   //cards.style.display = 'flex';
 //myModal.show();
+
+loader.style.display = 'block';
 setTimeout(function(){
   myModal.show();
 }, 1000)
